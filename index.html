@@ -155,6 +155,28 @@
       color: var(--paper);
     }
 
+    .nav-links a.booking-nav {
+      min-height: 44px; gap: 12px;
+      border: 3px double var(--brass); border-radius: 4px;
+      background: var(--coal); color: var(--paper);
+      box-shadow: 0 3px 0 rgba(21, 17, 12, 0.18);
+    }
+    .booking-sign {
+      width: 100%; max-width: 540px; display: flex;
+      align-items: center; justify-content: space-between; gap: 20px;
+      padding: 18px 24px; border: 4px double var(--brass); border-radius: 4px;
+      color: var(--paper); background: var(--coal);
+      box-shadow: 0 5px 0 var(--bone), 0 12px 24px rgba(21, 17, 12, 0.12);
+      transition: background 0.18s ease;
+    }
+    .booking-sign-copy { display: grid; gap: 4px; }
+    .booking-kicker { color: var(--bone); font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; }
+    .booking-title { font-family: var(--display); font-size: clamp(1.65rem, 5.5vw, 2.2rem); line-height: 1.1; }
+    .booking-detail { color: var(--bone); font-size: 0.78rem; }
+    .booking-arrow { color: var(--bone); font-size: 2rem; }
+    .booking-sign:hover, .nav-links a.booking-nav:hover { background: var(--ink); }
+    .booking-sign:focus-visible, .nav-links a.booking-nav:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+
     .hero {
       min-height: 76svh;
       display: grid;
@@ -679,7 +701,8 @@
     <div class="nav-links" aria-label="Page links">
       <a href="#services">Services</a>
       <a href="#visit">Studio</a>
-      <a href="tel:+447871021451" class="primary">Call 07871 021451</a>
+      <a href="tel:+447871021451">Call 07871 021451</a>
+      <a href="https://www.vagaro.com/vintagecut/services" class="primary booking-nav">Book online <span aria-hidden="true">↗</span></a>
     </div>
   </nav>
 
@@ -690,7 +713,8 @@
         <h1>Vintage Cut Walthamstow.</h1>
         <p>Classic barbering with a clean modern finish: sharp skin fades, clipper cuts, beard work, razor shaves, colour and men's grooming treatments close to Walthamstow Central.</p>
         <div class="hero-actions">
-          <a class="button primary" href="tel:+447871021451">Call the shop</a>
+          <a class="booking-sign" href="https://www.vagaro.com/vintagecut/services"><span class="booking-sign-copy"><span class="booking-kicker">Your next fresh cut</span><span class="booking-title">Book your appointment</span><span class="booking-detail">View services &amp; book online with Vagaro</span></span><span class="booking-arrow" aria-hidden="true">↗</span></a>
+          <a class="button secondary" href="tel:+447871021451">Call the shop</a>
           <a class="button secondary" href="https://www.google.com/maps/place/Vintage+Cut/@51.5872129,-0.0208443,21z/data=!4m6!3m5!1s0x48761de8f5650903:0x8ff068567fb824e8!8m2!3d51.5872129!4d-0.0205466!16s%2Fg%2F11h7fyckd1?entry=tts&g_ep=EgoyMDI2MDYyOS4wIPu8ASoASAFQAw%3D%3D&skid=c2c7b762-ecd2-4c32-a1ff-24413613a1a4" target="_blank" rel="noopener">Get directions</a>
         </div>
       </div>
